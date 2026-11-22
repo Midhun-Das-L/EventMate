@@ -21,6 +21,7 @@ It also has a **resource** `eventmate://events/{id}/summary` (a Markdown brief) 
 ## Install
 
 ```bash
+git clone -b ccr-3b5e7e94-wmx1q8 https://github.com/Midhun-Das-L/EventMate.git && cd EventMate
 uv venv && uv pip install -e ".[dev]"     # or: pip install -e ".[dev]"
 ```
 
@@ -32,7 +33,7 @@ Data is stored at `~/.eventmate/eventmate.db`. To use a different file, set `EVE
 `eventmate` server. To add it globally instead:
 
 ```bash
-claude mcp add eventmate -- uv run --project /path/to/Test-mcp-server eventmate-mcp
+claude mcp add eventmate -- uv run --project /path/to/EventMate eventmate-mcp
 ```
 
 **Claude Desktop:** add this to `claude_desktop_config.json` (Settings → Developer → Edit Config), then restart Claude Desktop:
@@ -42,7 +43,7 @@ claude mcp add eventmate -- uv run --project /path/to/Test-mcp-server eventmate-
   "mcpServers": {
     "eventmate": {
       "command": "uv",
-      "args": ["run", "--project", "/absolute/path/to/Test-mcp-server", "eventmate-mcp"]
+      "args": ["run", "--project", "/absolute/path/to/EventMate", "eventmate-mcp"]
     }
   }
 }
