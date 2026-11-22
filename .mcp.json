@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "eventmate": {
+      "command": "uv",
+      "args": ["run", "--project", ".", "eventmate-mcp"]
+    }
+  }
+}

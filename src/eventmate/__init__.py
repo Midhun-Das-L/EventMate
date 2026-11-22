@@ -1,0 +1,1 @@
+"""EventMate MCP server."""
